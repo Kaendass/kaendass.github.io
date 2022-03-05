@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #10ac84;
+    color: #fff;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+* {
+    font-size: 16px;
+}
+
+
+/*palette: https://colorhunt.co/palette/222222045757044343e4e4e4/?ref=tab*/
+
+
+/*Page-1 background photo: https://www.pexels.com/photo/technology-computer-desktop-programming-113850/*/
+
+
+/*Navigation Bar*/
+
+nav {
+    background-color: rgba(12, 17, 11, 0.9);
+    width: 100%;
+    position: fixed;
+}
+
+.wrapper {
+    justify-content: space-around;
+    padding: 0px 64px;
+}
+
+nav>.wrapper>a>h1 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 8px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.hat-img {
+    max-width: 50px;
+}
+
+nav>.wrapper>.nav-links {
+    gap: 32px;
+}
+
+.nav-links a {
+    font-size: 14px;
+    padding: 8px;
+    color: #fff;
+}
+
+.nav-links a:hover,
+nav>.wrapper>a>h1:hover {
+    color: #d4d4d4;
+}
+
+.nav-links>a>.fa-brands {
+    font-size: 24px;
+}
+
+.fa-brands:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*First Page*/
+
+.page-1 {
+    height: 100vh;
+    justify-content: center;
+}
+
+.page-1 .wrapper {
+    justify-content: center;
+}
+
+.introduction {
+    text-align: center;
+    width: 50%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgba(12, 17, 11, 0.7);
+}
+
+.my-img {
+    height: 250px;
+}
+
+.my-img:hover {
+    transition: 2s;
+}
+
+.intro-texts {
+    flex-direction: column;
+    margin: 12px;
+}
+
+.intro-text-1 {
+    text-align: left;
+    font-size: 32px;
+}
+
+.intro-text-2 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.icons {
+    gap: 16px;
+}
+
+.introduction>.icons>a>i {
+    font-size: 28px;
+}
+
+#page-1-arrow {
+    position: absolute;
+    left: 50%;
+    top: 90vh;
+    transform: translate(-50%, -50%);
+}
+
+.fa-chevron-down {
+    font-size: 24px;
+}
+
+
+/*Page 2*/
+
+#page-2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 12px;
+    row-gap: 12px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.project {
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.project>img {
+    height: 150px;
+    width: 325px;
+}
+
+.project>.p-title {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.project>.p-desc {
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/*General*/
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+
+/*Effects*/
+
+.blink {
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav>.wrapper>a>h1 {
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+    .hat-img {
+        max-width: 40px;
+    }
+    nav>.wrapper>.nav-links {
+        gap: 16px;
+    }
+    .nav-links a {
+        font-size: 12px;
+    }
+    .nav-links>a>.fa-brands {
+        font-size: 18px;
+    }
+    /*First Page*/
+    .introduction {
+        width: 100%;
+        height: 200px;
+    }
+    .my-img {
+        height: 200px;
+    }
+    .intro-texts {
+        margin: 12px;
+    }
+    .intro-text-1 {
+        text-align: left;
+        font-size: 24px;
+    }
+    .intro-text-2 {
+        text-align: center;
+        font-size: 12px;
+    }
+    .icons {
+        gap: 16px;
+    }
+    .introduction>.icons>a>i {
+        font-size: 24px;
+    }
+    .fa-chevron-down {
+        font-size: 10px;
+    }
+    /*Page 2*/
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+    .project>img {
+        height: 100px;
+        width: 250px;
+    }
+    .project>.p-title {
+        font-size: 12px;
+    }
+    .project>.p-desc {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav>.wrapper {
+        justify-content: space-around;
+        padding: 0px;
+    }
+    nav>.wrapper>a>h1 {
+        font-size: 12px;
+    }
+    .hat-img {
+        max-width: 35px;
+    }
+    nav>.wrapper>.nav-links {
+        gap: 4px;
+    }
+    .nav-links a {
+        font-size: 10px;
+    }
+    .nav-links>a>.fa-brands {
+        font-size: 14px;
+    }
+    /*First Page*/
+    #page-1>.wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+    .introduction {
+        width: 100%;
+        height: 250px;
+    }
+    .my-img {
+        height: 100px;
+    }
+    .intro-texts {
+        margin: 12px;
+    }
+    .intro-text-1 {
+        text-align: left;
+        font-size: 12px;
+    }
+    .intro-text-2 {
+        text-align: center;
+        font-size: 10px;
+    }
+    .icons {
+        gap: 16px;
+    }
+    .introduction>.icons>a>i {
+        font-size: 16px;
+    }
+    .fa-chevron-down {
+        font-size: 16px;
+    }
+    /*Page 2*/
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 12px;
+        row-gap: 12px;
+    }
+    .project>img {
+        height: 100px;
+        width: 250px;
+    }
+    .project>.p-title {
+        font-size: 12px;
+    }
+    .project>.p-desc {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="bla bla, bla bla">
+    <meta name="description" content="description of your website!">
+    <link rel="icon" type="image/png" href="materials/favicon.ico" />
+    <script src="https://kit.fontawesome.com/260dc2fe64.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Tuna Kokarcalı</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="wrapper flex-align">
+            <a href="#page-1" class="nav-left">
+                <img src="materials/hat.svg" alt="hat illustration" class="hat-img">
+                <h1>TUNA KOKARCALI</h1>
+            </a>
+            <div class="nav-links flex-align">
+                <a href="#page-2">Projects</a>
+                <a href="./materials/CV.pdf" download>Resume</a>
+                <a href="https://github.com/Kaendass" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </nav>
+    <section id="page-1" class="page-1 flex-align">
+        <div class="wrapper flex-align fade-in">
+            <img src="materials/me.jpg" alt="my picture" class="my-img">
+            <!--Image from https://www.reshot.com/free-svg-icons/item/hat-BH7XVFECGA/-->
+            <div class="introduction flex-align">
+                <div class="intro-texts flex-align">
+                    <span class="intro-text-1">Hey! I'm Tuna Kokarcalı.</span>
+                    <span class="intro-text-2">I am a student at Bogazici University, Istanbul. I'm developing data science algortihms, and I can be called a data analyst. I use Python and SQL for data analytics. Data is my passion, and I really love to work with data and machine learning algorithms. You can find my projects and resume in this website.
+                    </span>
+                </div>
+                <div class="icons flex-align">
+                    <a href="https://github.com/Kaendass" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https:/linkedin.com/in/tunakokarcali" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.kaggle.com/tunakokarcal" , target="_blank"><i class="fa-brands fa-kaggle"></i></a>
+                    <a href="mailto:kerimkokarcali@gmail.com" target="_blank"><i class="fa-brands fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a id="page-1-arrow" class="blink" href="#page-2">
+        <i class="fa-solid fa-chevron-down"></i>
+    </a>
+
+    <section id="page-2" class="page-2 flex-align">
+        <div class="container">
+            <a href="https://www.kaggle.com/tunakokarcal/mission-launches-data-analysis " target="_blank">
+                <div class="project flex-align">
+                    <img src="./materials/project1.png" alt="Project 1">
+                    <span class="p-title">Mission Launches</span>
+                    <span class="p-desc">Data Analysis and Visualization</span>
+                </div>
+            </a>
+            <a href="https://github.com/Kaendass/Finance-Data-Analysis" target="_blank">
+                <div class="project flex-align">
+                    <img src="./materials/project2.png" alt="Project 1">
+                    <span class="p-title">Finance Data Analysis</span>
+                    <span class="p-desc">Data Cleaning and Visualization</span>
+                </div>
+            </a>
+            <a href="https://github.com/Kaendass/911-Calls-Data-Analysis" target="_blank">
+                <div class="project flex-align">
+                    <img src="./materials/project3.png" alt="Project 1">
+                    <span class="p-title" n>911 Calls Data Analysis</span>
+                    <span class="p-desc">Data Visualization</span>
+                </div>
+            </a>
+            <a href="https://github.com/Kaendass/Hotel-Booking-Data-Analysis" target="_blank">
+                <div class="project flex-align">
+                    <img src="./materials/project4.png" alt="Project 1">
+                    <span class="p-title">Hotel Booking Data Analysis</span>
+                    <span class="p-desc">Data Analysis</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        const nav = document.querySelector("nav");
+        window.onscroll = function() {
+            if ((document.body.scrollTop >= 100) || (document.documentElement.scrollTop >= 100)) {
+                nav.style.backgroundColor = "rgba(12, 17, 11, 1)"
+
+            } else {
+                nav.style.backgroundColor = "rgba(12, 17, 11, 0.9)"
+            }
+        };
+    </script>
+</body>
+
+</html>
