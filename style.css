@@ -154,8 +154,8 @@ nav>.wrapper>a>h1:hover {
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 12px;
-    row-gap: 12px;
+    column-gap: 24px;
+    row-gap: 24px;
 }
 
 .row {
